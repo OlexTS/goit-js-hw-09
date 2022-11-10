@@ -4,6 +4,7 @@ const btnStopRef = document.querySelector('[data-stop]');
 
 btnStartRef.addEventListener('click', onBtnStart);
 btnStopRef.addEventListener('click', onBtnStop);
+let timerId = null;
 
 function onBtnStart() {
     btnStartRef.setAttribute('disabled', true);
